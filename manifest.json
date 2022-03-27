@@ -1,0 +1,19 @@
+{
+	"name" : "passcheck",
+	"version" : "0.0.1",
+	"manifest_version" : 3,
+	"description" : "Never set a weak password again - passcheck tells you how common your password is",
+	"content_scripts" : [
+		{
+			"js" : ["init.js"],
+			"css" : ["pwd.css"],
+			"matches" : ["<all_urls>"]
+		}
+	],
+	"web_accessible_resources" : [
+		{
+			"resources": ["trash.png", "lock.png"],
+			"matches": ["<all_urls>"]
+		}
+	]
+}
